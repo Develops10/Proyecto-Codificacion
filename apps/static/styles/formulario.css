@@ -18,6 +18,11 @@ body{
     .input {
         font-size: 10px !important;
     }
+
+    .swal2-input {
+        height: 2rem !important;
+        font-size: 1rem !important;
+    }
 }
 
 

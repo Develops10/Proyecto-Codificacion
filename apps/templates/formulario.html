@@ -14,18 +14,15 @@
 <body>
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-4">
-            <h2>Ficha de Departamentos</h2>
+            <h2 class="title">Ficha de Departamentos</h2>
             <div class="button-group">
-                <button class="btn btn-danger">Cancelar</button>
-                <button class="btn btn-primary" id="btn-proveedor">Provedores</button>
-                <a href="/"><button class="btn btn-secondary">Atras</button></a>
-               
-           
-             
+                <button class="btn btn-danger btn-sm">Cancelar</button>
+                <button class="btn btn-primary btn-sm" id="btn-proveedor">Provedores</button>
+                <a href="/"><button class="btn btn-secondary btn-sm">Atras</button></a>
             </div>
         </div>
-        <div class="row row-no-wrap">
-            <div class="col-md-4">        
+        <div class="d-flex px-0">
+            <div class="col-md-3 me-4">        
                     <h3>Departamento</h3>
                     <select name="departamento" id="departamentoSelect"  >
                         <option value="" disabled selected>SELECCIONA DEPARTAMENTO</option>
@@ -52,7 +49,7 @@
                         <h4> {{ini_tio}}  </h4>    
             </div>
 
-            <div class="col-md-8 col-12 ">
+            <div class="col-md-8">
                 <div class="mb-4">
                     <h3>Departamento</h3>
                     <form action="" method="post" id="mainForm">
@@ -60,7 +57,7 @@
                     
                         <div class="mb-3">
                             <label for="codigo-departamento" class="form-label">Código <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="codigo-departamento" placeholder="Ingrese el código" name="c_departamento">
+                            <input type="text" class="form-control input" id="codigo-departamento" placeholder="Ingrese el código" name="c_departamento">
                         </div>
                         <div class="mb-3">
                             <label for="descripcion-departamento" class="form-label">Descripción <span class="text-danger">*</span></label>

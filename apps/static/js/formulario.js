@@ -102,7 +102,7 @@ $.ajax({
             showCancelButton: true,
             html: `
                     <!-- Subtítulo -->
-            <p style="font-size: 16px; color: gray; margin: 0; text-align: center;">
+            <p class="mb-1" style="font-size: 16px; color: gray; margin: 0; text-align: center;">
                 Trabajando bajo el proveedor: <strong>${localStorage.getItem('codigoProveedor')}
             </p>
 
@@ -110,21 +110,21 @@ $.ajax({
                     <!-- Primera sección -->
                     <div style="width: 48%;">
                         <label for="codigo_tio">Código Tío</label>
-                        <input type="text" id="codigo_tio" disabled class="swal2-input" placeholder="Código Tío" required>
+                        <input type="text" id="codigo_tio" disabled class="swal2-input mb-2" placeholder="Código Tío" required>
 
                         <label for="descripcion">Descripción</label>
-                        <input type="text" id="descripcion" class="swal2-input" placeholder="Descripción" required>
+                        <input type="text" id="descripcion" class="swal2-input mb-2" placeholder="Descripción" required>
 
                         <label for="modelo">Modelo</label>
-                        <input type="text" id="modelo" class="swal2-input" placeholder="Modelo" required>
+                        <input type="text" id="modelo" class="swal2-input mb-2" placeholder="Modelo" required>
 
                         <label for="modelo">Marca Descriptiva</label>
-                        <input type="text" id="marca" class="swal2-input" placeholder="Modelo" required>
+                        <input type="text" id="marca" class="swal2-input mb-2" placeholder="Modelo" required>
 
                         <label for="descripcion_corta">Descripción Corta</label>
-                        <input type="text" id="descripcion_corta" class="swal2-input" placeholder="Descripción Corta" required>
+                        <input type="text" id="descripcion_corta" class="swal2-input mb-2" placeholder="Descripción Corta" required>
 
-                        <label for="moneda" style="margin-top: 25px;">Moneda</label>
+                        <label for="moneda" class="mb-2">Moneda</label>
                         <select id="moneda" class="swal2-input" required>
                             <option value="">Seleccione una opción</option>
                             <option value="USD">USD</option>
@@ -136,20 +136,20 @@ $.ajax({
                     <!-- Segunda sección -->
                     <div style="width: 48%;">
                         <label for="codigo_maestro">Codigo Tío</label>
-                        <input type="text" id="codigo_tio2" disabled class="swal2-input" placeholder="Código Tío" required>
+                        <input type="text" id="codigo_tio2" disabled class="swal2-input mb-2" placeholder="Código Tío" required>
 
                         <label for="codigo_maestro">Código Maestro</label>
-                        <input type="text" id="codigo_maestro" disabled class="swal2-input" placeholder="Código Maestro" required>
+                        <input type="text" id="codigo_maestro" disabled class="swal2-input mb-2" placeholder="Código Maestro" required>
 
                         <label for="descripcion2">Descripción</label>
-                        <input disabled value="CODIGO MAESTRO" type="text" id="descripcion2" class="swal2-input" placeholder="Descripción" required>
+                        <input disabled value="CODIGO MAESTRO" type="text" id="descripcion2 mb-2" class="swal2-input" placeholder="Descripción" required>
 
-                        <label for="provedorcod">Proveedor</label><button class="btn btn-primary" id="btn-modal-provedores" style="margin-left: 25px;">Verificar proveedor</button>
-                        <input disabled  type="text" id="provedorcod" class="swal2-input" placeholder="Descripción" required>
+                        <label for="provedorcod" class="mb-2">Proveedor</label><button class="btn btn-primary" id="btn-modal-provedores" style="margin-left: 25px;">Verificar proveedor</button>
+                        <input disabled  type="text" id="provedorcod" class="swal2-input mb-2" placeholder="Descripción" required>
 
      
                         <label for="codigo_alterno2">Código Alterno</label>
-                        <input disabled type="text" id="codigo_alterno2" class="swal2-input" placeholder="Código Alterno" required>
+                        <input disabled type="text" id="codigo_alterno2" class="swal2-input mb-2" placeholder="Código Alterno" required>
 
                         <label for="descripcionAlterana">Descripción Alterna</label>
                         <input  value = "CODIGO ALTERNO" disabled type="text" id="descripcionAlterana" class="swal2-input" placeholder="Descripción" required>
